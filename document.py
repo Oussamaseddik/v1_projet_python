@@ -5,7 +5,7 @@ class Document:
         self.date = date
         self.url = url
         self.texte = texte
-        self.type = "Document"  # pour polymorphisme futur
+        self.type = "Document"
 
     def __str__(self):
         return f"{self.titre} ({self.auteur})"
