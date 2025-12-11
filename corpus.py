@@ -16,7 +16,7 @@ class Corpus:
         self.id2doc[doc_id] = doc
         self.ndoc += 1
 
-        # Ajouter auteur
+  
         if doc.auteur not in self.authors:
             self.authors[doc.auteur] = Author(doc.auteur)
             self.naut += 1
