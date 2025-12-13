@@ -1,4 +1,6 @@
 
+# gestion des auteurs et leurs documents associee
+
 
 class Author:
     def __init__(self, name):
@@ -6,6 +8,7 @@ class Author:
         self.ndoc = 0
         self.production = {}
 
+    
     def add(self, doc_id, doc):
         self.production[doc_id] = doc
         self.ndoc += 1
