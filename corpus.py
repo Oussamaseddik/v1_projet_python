@@ -2,7 +2,7 @@
 import pandas as pd
 from src.Document import Document, RedditDocument, ArxivDocument
 from src.Author import Author
-
+#Structure centrale pour gerer les documents : ajouter des documents et son auteur et affichier les 1er docs du corpus
 class Corpus:
     def __init__(self, nom):
         self.nom = nom
@@ -25,7 +25,7 @@ class Corpus:
     def show_docs(self, n=5):
         for i, doc in list(self.id2doc.items())[:n]:
             print(doc)
-
+# recharger et sauvgarder le corpus dans un ficher 
     def save(self, filename):
         data = []
         for doc_id, doc in self.id2doc.items():
