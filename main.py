@@ -1,8 +1,8 @@
-# main_v1.py
+
 from src.Document import Document, RedditDocument, ArxivDocument
 from src.Corpus import Corpus
 
-
+# ce script est le script principal pour tester la gestion du corpus
 corpus = Corpus("MonCorpus")
 
 
